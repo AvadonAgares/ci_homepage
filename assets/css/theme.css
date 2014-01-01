@@ -1,0 +1,12 @@
+ul.top-nav {
+    background-color:#0b61a4;
+    color:white;
+}
+ul.top-nav a{
+    color:white;
+    text-decoration:none;
+}
+
+ul.top-nav>li.current {
+    background-color:#3f92d2;
+}

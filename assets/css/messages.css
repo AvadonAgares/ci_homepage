@@ -1,0 +1,40 @@
+
+div.messages {
+    display:none;
+    position:absolute;
+    top:0;
+    right:2em;
+    background-color:white;
+    border:1px solid rgba(0,0,0,0.5);
+}
+
+div.messages-container {
+    position:absolute;
+    top:0;
+    right:0;
+    width:2em;
+    height:2em;
+    background-color:rgba(0,0,0,0.75);
+    vertical-align:middle;
+    text-align:center;
+}
+
+div.messages-container > input[type="checkbox"] {
+    background-color:black;
+}
+
+div.messages-container:hover > .messages,
+div.messages-container > input[type="checkbox"]:checked + .messages {
+    display:block;
+}
+
+div.message {
+    min-width:200px;
+    opacity:1;
+    background-color:white;
+    color:black;
+    padding:1em;
+    box-shadow: 0 4px 2px -2px #ccc;
+    /* border-bottom:1px solid #000; */
+    margin-top:3px;
+}
