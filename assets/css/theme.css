@@ -1,5 +1,6 @@
 ul.top-nav {
-    background-color:#0b61a4;
+    /* Light Blue background-color:#0b61a4; */
+    /* Dark Blue */ background-color:rgb(23, 54, 93);
     color:white;
 }
 ul.top-nav a{
@@ -8,5 +9,6 @@ ul.top-nav a{
 }
 
 ul.top-nav>li.current {
-    background-color:#3f92d2;
+    /* Light Blue background-color:#3f92d2; */
+    /* Dark Blue */ background-color:#0b61a4;
 }

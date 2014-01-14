@@ -1,14 +1,98 @@
-ul.top-nav{
-    width:100%;
-    /* padding:1em; */
+body {
+    font-family:Raleway;
+     -webkit-text-stroke: 0.35px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-family:Raleway;
+    font-weight: 300;
+    letter-spacing: 1px;
+    background-color:whitesmoke;
 }
 
-ul.top-nav>li {
+header {
+    padding-top:10px;
+    height: 161px;
+    min-width: 320px;   
+    background-color: rgb(39, 39, 39);
+    position:relative;
+    z-index:0;
+    /* background-color: rgba(0,0,0,.85); */
+    
+}
+
+header h1,
+header h2 {
+    margin:0;
+    margin-left:1em;
+    font-family: Raleway;
+    font-size: 20pt;
+    line-height: 32pt;
+    font-weight: normal;
+    color: whitesmoke;
+    margin-left: 20px;
+    font-weight:400;
+    text-align:middle;
+    position:relative;
+    z-index:5;
+}
+
+header h1 {
+    font-weight:normal;
+}
+
+header h2 {
+    margin-left:40px;
+    font-size:16pt;
+    line-height:20pt;
+}
+
+header nav {
+    vertical-align:bottom;
+    width:100%;
+    background-color:rgb(23, 54, 93);
+    position:absolute;
+    bottom:0;
+    height:53px;
+}
+
+header img,
+header div.img-gradient  {
+    position:absolute;
+    top:0;
+    right:0;
+    z-index:0;
+    
+}
+header div.img-gradient {
+    /* background-color:rgba(0,0,0,.5); */
+    background-image:linear-gradient(to right, 
+            rgba(39, 39, 39 ,   1),
+            rgba(39, 39, 39 ,0.85),
+            rgba(39, 39, 39 ,0.45), 
+            rgba(39, 39, 39 ,0.25));
+    width:673px;
+    height:108px;
+    z-index:1;
+}
+
+
+/* ul.top-nav{ */
+    /* width:100%; */
+
+/* background-color: rgba(0,0,0,.85); */
+/* position: static; */
+/* opacity: 0.85; */
+/* color: white; */
+    /* padding:1em; */
+/* } */
+
+header ul.top-nav>li {
     display:inline-block;
     font-size:22px;
     padding:.5em;
     padding-left:1em;
     padding-right:1em;
+    vertical-align:bottom;
+    
 }
 
 div.this-is-awkward {
@@ -26,3 +110,22 @@ a.panel-heading {
     display:block;
     width:100%;
 }
+
+
+/* =========== Admin =========== */
+nav.admin-nav {
+    margin:0;
+    text-align:right;
+    font-size:16px;
+}
+
+nav.admin-nav li{
+    margin:0 0px 0 10px;
+    display:inline-block;
+}
+
+nav.admin-nav a {
+    color:black;
+}
+
+

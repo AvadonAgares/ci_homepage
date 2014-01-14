@@ -1,5 +1,7 @@
+</section>
 <footer>
-    <span class="copy">&copy; 2013</span>
+    <span class="legalese">&copy; 2013</span>
+    <a class="legalese">Technology</a>
 </footer>
 </body>
 </html>

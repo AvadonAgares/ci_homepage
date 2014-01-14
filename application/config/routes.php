@@ -41,6 +41,7 @@
 $route['default_controller'] = 'blog/all';
 $route['blog/post/(:any)'] = 'blog/post/$1';
 $route['blog/add'] = 'blog/add';
+$route['blog/all'] = 'blog/all';
 $route['blog/(:any)'] = 'blog/post/$1';
 $route['(:any)'] = 'main/view/$1';
 
