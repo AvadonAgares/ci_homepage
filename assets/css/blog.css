@@ -1,0 +1,115 @@
+section {
+    max-width:800px;
+    min-width:300px;
+    margin:0 auto;
+    padding:0 10px;
+}
+
+article.snippet {
+    box-shadow:0px 0px 2px 0px #ccc;
+    margin:1em 0;
+    padding:0;
+    background-color:white;
+}
+
+article.snippet .title-wrapper,
+article.snippet .tag-wrapper {
+    width:auto;
+    display:inline-block;
+    margin:0;
+    /* background-color:skyblue; */
+    height:3em;
+    vertical-align:top;
+}
+article.snippet .tag-wrapper {
+    float:right;
+    max-width:50%;
+    margin-right:10px;
+}
+
+article.snippet .title-wrapper {
+    line-height:3em;
+    padding-left:1em;
+    overflow-x:hide;
+}
+article.snippet .title {
+    font-size:1.5em;
+    display:inline-block;
+    
+}
+
+article.snippet ul.tags {
+    padding:0;
+    text-align:right;
+    vertical-align:middle;
+    white-space: nowrap;
+    padding: 1px;
+    overflow:hidden;
+    height:100%;
+}
+
+article.snippet ul.tags li {
+    display:inline-block;
+    margin-left:1em;
+    max-width:47%;
+    margin-left:0%;
+    margin-right:3%;
+    margin-top:.75em;
+}
+
+article.snippet ul.tags li a {
+    background-color:whitesmoke;
+    outline:1px solid #ccc;
+    line-height:1em;
+    padding:.25em .5em;
+    height:1em;
+    margin-bottom:1px;
+    overflow:hidden;
+    font-family:"Courier New", Courier, monospace;
+    color:black;
+}
+
+article.snippet ul.tags li a:hover {
+    background-color:#ccc;
+    outline:1px solid #999;
+    text-decoration:none;
+}
+
+article div.body-wrapper{
+    padding:.5em;
+}
+
+article.blog-post {
+    background-color:white;
+    padding:10px;
+}
+
+article.blog-post h2 {
+    font-size:22px;
+    margin:10px 0;
+}
+
+article.blog-post div.body {
+    white-space:pre;
+}
+
+/* =========== Add Form =========== */
+
+div.add-post-panel {
+    
+}
+
+div.add-post-panel div.form-item{
+    position:relative;
+    margin-bottom:15px;
+}
+
+div.add-post-panel input[name=title] {
+    width:100%;
+}
+div.add-post-panel input[name=tags] {
+    display:inline-block;
+    width:80%;
+    position:absolute;
+    right:0;
+}
