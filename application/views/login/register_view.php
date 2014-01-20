@@ -4,16 +4,18 @@
     </div>
     <div class="panel-body">
 
+        <div class="alert alert-danger">
         <?php 
-            echo form_open();
             $errors = validation_errors(); 
             if (($errors)) {
-                echo '<div class="alert alert-danger">';
+                echo '';
                 echo $errors;
-                echo '</div';
+                echo '';
             }
-        
         ?>
+        </div
+        
+        <?php echo form_open(); ?>
         
         <div class="form-item title">
             <?php echo form_label('Username', 'username'); ?>
@@ -22,6 +24,15 @@
                             'value' => set_value('username'),
                             'class' =>'form-control')); ?>
         </div>
+        
+        <div class="form-item title">
+            <?php echo form_label('Email', 'email'); ?>
+            <?php echo form_input(
+                    array(  'name'  =>'email', 
+                            'value' => set_value('email'),
+                            'class' =>'form-control')); ?>
+        </div>
+        
         <div class="form-item title">
             <?php echo form_label('Password', 'password_1'); ?>
             <?php echo form_input(
@@ -42,7 +53,8 @@
         
         <div class="form-item submit">
             <?php echo form_submit('register-submit','Register');  ?>
-            <?php echo form_close(); ?>
+            
         </div>
+        <?php echo form_close(); ?>
     </div>
 </div>
