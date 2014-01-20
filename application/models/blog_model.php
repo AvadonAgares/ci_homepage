@@ -2,6 +2,7 @@
 
 class Blog_model extends CI_model {
     public function __construct() {
+        parent::__construct();
         $this->load->database();
     }
     
@@ -9,6 +10,7 @@ class Blog_model extends CI_model {
         // $query = $this->db->get_where('blog_posts', array('post_id'=>$post_id), 1);
         // $return = $query->result();
         $sql = "SELECT 
+                    post_id,
                     post_date,
                     title, 
                     body,
@@ -21,6 +23,7 @@ class Blog_model extends CI_model {
     
     public function get_recent_posts($num=5) {
         $sql = "SELECT 
+                    post_id,
                     post_date,
                     title, 
                     body,

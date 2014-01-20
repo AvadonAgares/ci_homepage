@@ -3,7 +3,6 @@ class Main extends CI_Controller {
     
     public function view($page='home') {
         require('application/libraries/debug.php');
-        d($page, 'test'. array(), 082395802385);
         if (!file_exists('application/views/main/'.$page.'.php')) {
             $page = 'awkward';
         }

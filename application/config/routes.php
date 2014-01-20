@@ -38,11 +38,16 @@
 |
 */
 
-$route['default_controller'] = 'blog/all';
-$route['blog/post/(:any)'] = 'blog/post/$1';
-$route['blog/add'] = 'blog/add';
-$route['blog/all'] = 'blog/all';
-$route['blog/(:any)'] = 'blog/post/$1';
+$route['default_controller'] = 'blog/blog/all';
+$route['blog/post/(:any)'] = 'blog/blog/post/$1';
+$route['blog/add'] = 'blog/blog/add';
+$route['blog/all'] = 'blog/blog/all';
+$route['blog/(:any)'] = 'blog/blog/post/$1';
+$route['login'] = 'login/login/main';
+$route['logout'] = 'login/login/logout';
+$route['register'] = 'login/login/register';
+/* $route['verify_login'] = 'login/verify_login/main'; */
+$route['admin'] = 'admin/admin/main';
 $route['(:any)'] = 'main/view/$1';
 
 // $route['css'] = 'css/';
