@@ -4,18 +4,16 @@
     </div>
     <div class="panel-body">
 
-        <div class="alert alert-danger">
+        <?php echo form_open(); ?>
+        
         <?php 
             $errors = validation_errors(); 
-            if (($errors)) {
-                echo '';
+            if (isset($errors)) {
+                echo '<div class="alert alert-danger">';
                 echo $errors;
-                echo '';
+                echo '</div>';
             }
         ?>
-        </div
-        
-        <?php echo form_open(); ?>
         
         <div class="form-item title">
             <?php echo form_label('Username', 'username'); ?>
@@ -52,7 +50,7 @@
         </div>
         
         <div class="form-item submit">
-            <?php echo form_submit('register-submit','Register');  ?>
+            <?php echo form_submit(array('name'=>'register-submit', 'class' => 'form-control'),'Register');  ?>
             
         </div>
         <?php echo form_close(); ?>

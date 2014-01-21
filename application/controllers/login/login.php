@@ -54,6 +54,7 @@ class Login extends CI_Controller {
         if ($this->form_validation->run() == FALSE ){
             $this->load->view('login/register_view', $data);
         } else {
+            $this->User_model->create_user($_POST['username'], $_POST['password'], $_POST['email']);
             $this->load->view('login/register_success_view', $data);
         }
         $this->load->view('templates/footer', $data);
