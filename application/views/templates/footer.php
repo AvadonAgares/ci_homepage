@@ -1,7 +1,10 @@
 </section>
+</div>
 <footer>
-    <span class="legalese">&copy; 2013</span>
-    <a class="legalese">Technology</a>
+    <span class="legalese">&copy; <?php print date('Y'); ?></span>
+    <!--<a class="legalese">Technology</a>-->
+
 </footer>
+
 </body>
 </html>

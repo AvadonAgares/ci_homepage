@@ -1,11 +1,17 @@
 body {
-    font-family:Raleway;
+    font-family:Open Sans;
      -webkit-text-stroke: 0.35px;
     -webkit-font-smoothing: subpixel-antialiased;
-    font-family:Raleway;
+    font-family:Open Sans;
     font-weight: 300;
     letter-spacing: 1px;
     background-color:whitesmoke;
+    height:100%;
+}
+
+div.height-container {
+    min-height:100%;
+    margin-bottom:-28px;
 }
 
 header {
@@ -23,20 +29,20 @@ header h1,
 header h2 {
     margin:0;
     margin-left:1em;
-    font-family: Raleway;
+    font-family: "Open Sans";
     font-size: 20pt;
     line-height: 32pt;
     font-weight: normal;
     color: whitesmoke;
     margin-left: 20px;
-    font-weight:400;
+    font-weight:300;
     text-align:middle;
     position:relative;
     z-index:5;
 }
 
 header h1 {
-    font-weight:normal;
+    /* font-weight:normal; */
 }
 
 header h2 {
@@ -93,6 +99,13 @@ header ul.top-nav>li {
     padding-right:1em;
     vertical-align:bottom;
     
+}
+
+footer {
+    height:28px;
+    padding:4px;
+    color:#efefef;
+    background-color:#333;
 }
 
 div.this-is-awkward {

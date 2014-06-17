@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="<?php echo(CSS.'messages.css'); ?>">
     <link rel="stylesheet" href="<?php echo(CSS.'dev/debug.css'); ?>">
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:400,300,100"></link>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
+<div class="height-container">
 <header>
     <div class="messages-container">
         <input type=checkbox class="messages-check" title="Check to keep messages open"/>
@@ -29,7 +31,7 @@
         </div>
     </div>
     <h1>Hello, my name is <b>Page Bonifaci</b></h1>
-    <h2>I am a Web Developer from the beautiful Pacific Northwest</h2>
+    <h2>I'm a Web Developer from the beautiful Pacific Northwest</h2>
     <div class="img-gradient"></div>
     <img src="<?php echo(IMG.'header-branches-wide.jpg'); ?>"></img>
     <nav>
