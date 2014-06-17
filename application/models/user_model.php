@@ -7,14 +7,13 @@ class User_model extends CI_model {
     }
     
     public function validate_user($username, $password) {
-        var_dump($username, $password);
         $this->load->library('PasswordHash', null, 'passHash');
         
         $sql = "SELECT 
                     username,
                     user_id,
                     password_hashed,
-                    user_type
+                    user_type_id
                 FROM users
                 WHERE username = ?";
         $result = $this->db->query($sql, array($username))->row_array();
@@ -27,7 +26,7 @@ class User_model extends CI_model {
                 $return = array(
                     'username' => $result['username'],
                     'user_id' => $result['user_id'],
-                    'user_type' => $result['user_type'],
+                    'user_type_id' => $result['user_type_id'],
                     'user_valid' => true
                 );
             } else {

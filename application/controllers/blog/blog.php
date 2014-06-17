@@ -1,20 +1,15 @@
 <?php
-class Blog extends CI_Controller {
+class Blog extends MY_Controller {
     public function __construct() {
-        parent::__construct();
+        
     }
 
     public function boilerplate(&$data) {
-        if (!isset($_SESSION)) {session_start();}
-        $_SESSION['user_type'] = 'Admin';
-        
-        require('application/libraries/debug.php');
-        
-        $data['current'] = 'blog';
+        $data['title'] = 'Blog | Page Bonifaci';
+        parent::__construct($data);
         
         $this->load->helper('url');
         $this->load->model('Blog_model');
-        
     }
     
     public function post($id=0) {
@@ -48,7 +43,7 @@ class Blog extends CI_Controller {
         $data = array();
         $data['title'] = 'All Posts';
         $this->boilerplate($data);
-        $this->load->view('templates/header', $data);
+        // $this->load->view('templates/header', $data);
         if (isset($_SESSION) && $_SESSION['user_type'] == 'Admin') {
             $this->load->view('templates/admin');
         }
@@ -70,6 +65,7 @@ class Blog extends CI_Controller {
     public function add() {
         $data = array();
         $data['title'] = 'Add New Post';
+        $data['security_level'] = 'admin';
         $this->boilerplate($data);
     
         $this->load->helper('form');
